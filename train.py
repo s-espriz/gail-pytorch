@@ -8,8 +8,8 @@ import gym
 
 from models.nets import Expert
 from models.gail import GAIL
-
-
+import numpy as np
+np.bool8 = np.bool_
 def main(env_name):
     ckpt_path = "ckpts"
     if not os.path.isdir(ckpt_path):
